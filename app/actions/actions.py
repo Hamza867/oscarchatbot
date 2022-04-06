@@ -173,8 +173,8 @@ class ActionSubmit(Action):
 def SendEmail(txt):
 
     # define content
-    recipients = ["hamzarain2001@gmail.com"]
-    sender = "hamzarain2001@gmail.com"
+    recipients = ["Enter your email"]
+    sender = "Enter sender email"
     subject = "Bot Chat with customer"
 
     """
@@ -201,7 +201,7 @@ def SendEmail(txt):
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.starttls()
     #print("Enter your password for email login : ")
-    password ='frainds@4321' #getpass()
+    password ='Enter your password' #getpass()
     session.login(sender, password)
     send_it = session.sendmail(sender, recipients, msg.as_string())
     session.quit()
